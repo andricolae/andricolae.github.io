@@ -62,25 +62,70 @@ p {
     border-radius: 5px;
 }
 
-.content {
+/* Secțiunea de sub navbar */
+.hero-section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Spațiu între imagine și text */
 }
 
-.big-image img {
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image img {
     width: 100%;
-    max-width: 600px;
     height: auto;
-    margin-bottom: 30px;
     border-radius: 10px;
 }
 
-.text-content {
-    max-width: 800px;
-    text-align: center;
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
 }
+
+.hero-text h2 {
+    color: #264653;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Pe ecrane mici, imaginea dispare și textul ocupă toată lățimea */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+}
+
 
 .section {
     background-color: #fff;

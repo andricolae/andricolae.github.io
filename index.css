@@ -64,27 +64,147 @@ p {
 
 .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; 
+}
+
+.big-image {
+    flex: 1;
+    max-width: 50%;
 }
 
 .big-image img {
     width: 100%;
-    max-width: 600px;
     height: auto;
-    margin-bottom: 30px;
     border-radius: 10px;
 }
 
 .text-content {
-    max-width: 800px;
-    text-align: center;
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
 }
 
 .text-content h2 {
+    color: #264653;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    font-size: 2.2rem;
+}
+
+.text-content p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.text-content ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.text-content ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .big-image {
+        display: none;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content p, .text-content ol, .text-content ul {
+        font-size: 1.1rem;
+    }
+}
+
+.features-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.features-section h2 {
+    color: #264653;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.features-list li {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+}
+
+.features-list li:before {
+    content: '✔';
+    color: #2a9d8f;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .features-list li {
+        font-size: 1.2rem;
+    }
+}
+
+.sub-features-list li::before {
+    content: '';
+}
+
+.sub-features-list {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 1rem;
+    color: #777;
+    list-style: none;
+}
+
+.sub-features-list li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .features-list li {
+        font-size: 1.2rem;
+    }
+
+    .sub-features-list {
+        font-size: 1rem;
+    }
 }
 
 .cards {
