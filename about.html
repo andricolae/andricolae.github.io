@@ -59,30 +59,33 @@
 
     <div class="section">
         <h2>PENTRU ALTE ÎNTREBĂRI, AI LA DISPOZIȚIE FORMULARUL DE MAI JOS</h2>
-        <div class="contact-form">
-            <form action="#" method="post">
-                <label for="name">Nume</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Mesaj</label><br>
-                <textarea id="message" name="message"></textarea><br><br>
-                <input type="submit" value="Scrie-ne">
-            </form>
-        </div>
-        <div class="image-and-pricing">
-            <img src="contact_image.jpg" alt="imagine contact" width="1000" height="600">
-            <br><br>
-            <button>Descoperă Prețurile</button>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Nume</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <input type="submit" value="Trimite">
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="contact_image.jpg" alt="Imagine Contact">
+            </div>
         </div>
     </div>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">
-                <img src="logo.png" alt="Footer Logo" width="200" height="200">
+            <div class="footer-logo footer-section">
+                <img src="logo.png" alt="Footer Logo">
             </div>
-            <div class="footer-links">
+            <div class="footer-links footer-section">
                 <ul>
                     <li><a href="#home">Acasă</a></li>
                     <li><a href="/about.html">Despre</a></li>
@@ -90,14 +93,13 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-address">
-                <p>Bulevardul Victoriei, nr. 1, Sibiu, România
-                </p>
+            <div class="footer-address footer-section">
+                <p>Bulevardul Victoriei, nr. 1, Sibiu, România</p>
             </div>
-            <div class="footer-social">
+            <div class="footer-social footer-section">
                 <ul>
-                    <li><a href="facebook.com">Facebook</a></li>
-                    <li><a href="linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
                 </ul>
             </div>
         </div>

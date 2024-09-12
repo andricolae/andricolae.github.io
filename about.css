@@ -1,112 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
 }
 
 h2 {
-    color: #333;
+    color: #e76f51;
     text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
 }
 
 p {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.8;
+    margin: 20px 10px;
     text-align: center;
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #e76f51;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px; 
+    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.navbar .logo {
-    margin-right: 50px;
-}
-
 .navbar .logo img {
-    width: 100px;
-    height: auto;
+    width: 120px;
 }
 
 .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
-    align-items: center;
-    flex-grow: 1;
+    list-style: none;
 }
 
 .navbar ul li {
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .navbar ul li a {
     color: #fff;
     text-decoration: none;
-    display: block;
     padding: 10px;
+    font-size: 1.1rem;
 }
 
 .navbar ul li a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-}
-
-.logo {
-    text-align: center;
-    padding: 10px;
+    background-color: #f4a261;
+    border-radius: 5px;
 }
 
 .content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-.big-image {
-    flex: 1;
-    max-width: 50%;
-    padding: 10px;
+.big-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .text-content {
-    flex: 1;
-    max-width: 50%;
-    padding: 10px;
-}
-
-.text-content h2 {
-    margin-top: 0;
-    color: #222;
+    max-width: 800px;
+    text-align: center;
 }
 
 .section {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.section h2 {
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section p, .section ul {
-    color: #555;
-    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section ul {
@@ -118,83 +99,132 @@ p {
     margin-bottom: 10px;
 }
 
-/* Contact form */
+.image-and-pricing img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .big-image img {
+        width: 100%;
+    }
+
+    .text-content, .section {
+        max-width: 100%;
+    }
+}
+
+/* Contact form și imagine */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .contact-form {
-    text-align: center;
-    margin: 20px;
+    flex: 1;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
     display: block;
-    margin: 10px 0 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .contact-form input, .contact-form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
+    background-color: #f5d5cd;
+    color: white;
     border: none;
+    padding: 12px 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #e76f51;
 }
 
-.image-and-pricing {
-    text-align: center;
-    margin: 20px 0;
+.contact-image {
+    flex: 1;
+    display: block;
 }
 
-.image-and-pricing img {
+.contact-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-.image-and-pricing button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .contact-form {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
-.image-and-pricing button:hover {
-    background-color: #555;
-}
 
 footer {
-    background-color: #333;
+    background-color: #e76f51;
     color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-logo, .footer-links, .footer-address, .footer-social {
-    flex: 1;
-    padding: 10px;
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .footer-links ul, .footer-social ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-links ul li, .footer-social ul li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .footer-links ul li a, .footer-social ul li a {
@@ -204,4 +234,50 @@ footer {
 
 .footer-links ul li a:hover, .footer-social ul li a:hover {
     text-decoration: underline;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-address p {
+    margin: 10px 0;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul li {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
