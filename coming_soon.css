@@ -50,7 +50,6 @@ footer {
     color: #888;
 }
 
-/* Responsivitate */
 @media (max-width: 768px) {
     .logo img {
         width: 120px;
