@@ -6,10 +6,12 @@ body, h2, p, .navbar ul li a, .hero-text h2, .contact-form input, .contact-form 
 
 :root {
     --primary-color: #e76f51;
+    --primary-color-top: #fd7554;
     --secondary-color: #264653;
     --text-color: #555;
     --background-color: #fafafa;
     --navbar-background: #e76f51;
+    --navbar-background-hover: #ac513a;
     --button-hover-color: #f5d5cd;
     --footer-background: #e76f51;
     --footer-text-color: #fff;
@@ -367,4 +369,23 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    background-color: var(--primary-color-top);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toTop:hover {
+    background-color:  var(--navbar-background-hover);
 }
