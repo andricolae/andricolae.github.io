@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, h2, p, .navbar ul li a, .text-content h2, .features-list li, .card h3, .contact-form input, .contact-form textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #2a9d8f;
+    --secondary-color: #264653;
+    --text-color: #555;
+    --background-color: #fdfdfd;
+    --navbar-background: #2a9d8f;
+    --hover-background: #fff;
+    --hover-border-color: #2a9d8f;
+    --to-top-color: #3fe3d0;
+    --to-top-hover-color: #1c766b
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +23,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
+    margin-top: 80px;
     padding: 0;
-    background-color: #fdfdfd;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 h2 {
@@ -27,13 +45,14 @@ p {
 }
 
 .navbar {
-    background-color: #2a9d8f;
+    background-color: var(--navbar-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -59,7 +78,7 @@ p {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: var(--hover-background);
     text-decoration: none;
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -70,9 +89,10 @@ p {
 }
 
 .navbar ul li a:hover {
-    color: #2a9d8f;
-    background-color: #fff;
-    border: 2px solid #2a9d8f;
+    color: var(--primary-color);
+    background-color: var(--hover-background);
+    border-color: var(--hover-border-color);
+    border: 2px solid;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
     transition: all 0.3s ease;
@@ -118,7 +138,7 @@ p {
 }
 
 .text-content h2 {
-    color: #264653;
+    color: var(--secondary-color);
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -171,7 +191,7 @@ p {
 }
 
 .features-section h2 {
-    color: #264653;
+    color: var(--secondary-color);
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -242,7 +262,7 @@ p {
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--hover-background);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
@@ -252,7 +272,7 @@ p {
 }
 
 .card h3 {
-    color: #264653;
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
@@ -272,7 +292,7 @@ p {
 .contact-form {
     flex: 1;
     margin-right: 20px;
-    background-color: #fff;
+    background-color: var(--hover-background);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -302,7 +322,7 @@ p {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #264653;
+    color: var(--secondary-color);
 }
 
 .contact-image {
@@ -335,7 +355,7 @@ p {
 
 footer {
     background-color: #2a9d8f;
-    color: #fff;
+    color: var(--hover-background);
     padding: 20px 20px;
     text-align: center;
 }
@@ -366,7 +386,7 @@ footer {
 }
 
 .footer-links ul li a, .footer-social ul li a {
-    color: #fff;
+    color: var(--hover-background);
     text-decoration: none;
 }
 
@@ -418,4 +438,23 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    background-color: var(--to-top-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toTop:hover {
+    background-color:  var(--to-top-hover-color);
 }

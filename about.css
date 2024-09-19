@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, h2, p, .navbar ul li a, .hero-text h2, .contact-form input, .contact-form textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #e76f51;
+    --secondary-color: #264653;
+    --text-color: #555;
+    --background-color: #fafafa;
+    --navbar-background: #e76f51;
+    --button-hover-color: #f5d5cd;
+    --footer-background: #e76f51;
+    --footer-text-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +23,14 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 h2 {
-    color: #e76f51;
+    color: var(--primary-color);
     text-align: center;
     font-size: 2.5rem;
     margin: 20px 0;
@@ -27,7 +44,6 @@ p {
 }
 
 .navbar {
-    background-color: #e76f51;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +51,8 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--navbar-background);
+    box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .navbar .logo img {
@@ -70,10 +87,11 @@ p {
 }
 
 .navbar ul li a:hover {
-    color: #e76f51;
+    color: var(--primary-color);
     background-color: #fff;
-    border: 2px solid #e76f51;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 5px 10px var(--box-shadow-color);
+    border: 2px solid;
     transform: translateY(-2px);
     transition: all 0.3s ease;
 }
@@ -89,7 +107,6 @@ p {
     }
 }
 
-/* Secțiunea de sub navbar */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -97,7 +114,7 @@ p {
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 20px; /* Spațiu între imagine și text */
+    gap: 20px;
 }
 
 .hero-image {
@@ -118,7 +135,7 @@ p {
 }
 
 .hero-text h2 {
-    color: #264653;
+    color: var(--secondary-color);
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -129,7 +146,6 @@ p {
     line-height: 1.8;
 }
 
-/* Pe ecrane mici, imaginea dispare și textul ocupă toată lățimea */
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -193,7 +209,6 @@ p {
     }
 }
 
-/* Contact form și imagine */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -227,8 +242,8 @@ p {
 }
 
 .contact-form input[type="submit"] {
-    background-color: #f5d5cd;
-    color: white;
+    background-color: var(--button-hover-color);
+    color: var(--footer-text-color);
     border: none;
     padding: 12px 20px;
     cursor: pointer;
@@ -236,7 +251,7 @@ p {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #e76f51;
+    background-color: var(--primary-color);
 }
 
 .contact-image {
@@ -268,8 +283,8 @@ p {
 
 
 footer {
-    background-color: #e76f51;
-    color: #fff;
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
     padding: 40px 20px;
     text-align: center;
 }
@@ -300,7 +315,7 @@ footer {
 }
 
 .footer-links ul li a, .footer-social ul li a {
-    color: #fff;
+    color: var(--footer-text-color);
     text-decoration: none;
 }
 

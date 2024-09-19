@@ -105,5 +105,20 @@
         </div>
     </footer>
 
+    <button id="toTop" onclick="scrollToTop()">↑</button>
+    <script>
+        window.onscroll = function() {
+            let toTop = document.getElementById("toTop");
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 200) {
+                toTop.style.display = "block";
+            } else {
+                toTop.style.display = "none";
+            }
+        };
+    
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
