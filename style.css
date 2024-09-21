@@ -28,6 +28,17 @@ body {
     margin: 0;
 }
 
+a {
+    background-color: #bf9c00;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -37,6 +48,7 @@ h1 {
     font-size: 2.5rem;
     margin: 20px 0;
     color: var(--text-color);
+    padding-bottom: 30px;
 }
 
 p {
