@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, h1, p, #countdown, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #ff6347;
+    --text-color: #333;
+    --secondary-text-color: #555;
+    --footer-text-color: #888;
+    --background-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--secondary-text-color);
+}
+
+#countdown {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--footer-text-color);
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #countdown {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #countdown {
+        font-size: 1rem;
+    }
+}
