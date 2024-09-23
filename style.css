@@ -39,11 +39,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    text-align: center;
-    padding: 20px;
-}
-
 h1 {
     font-size: 2.5rem;
     margin: 20px 0;
@@ -57,6 +52,46 @@ p {
     color: var(--secondary-text-color);
 }
 
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card a {
+    display: block;
+    background-color: #bf9c00;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+
 footer {
     position: absolute;
     bottom: 10px;
@@ -67,37 +102,27 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .logo img {
-        width: 120px;
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    #countdown {
-        font-size: 1.2rem;
+    .project-card {
+        width: 80%;
     }
 }
 
 @media (max-width: 480px) {
-    .logo img {
-        width: 100px;
+    .project-card {
+        width: 100%;
     }
 
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    #countdown {
+    .project-card a {
         font-size: 1rem;
+        padding: 10px;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
     }
 }
