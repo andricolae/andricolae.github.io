@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Coming Soon Page",
+        "description": "O pagină „Coming Soon” pentru proiecte în dezvoltare.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/coming-soon/",
+        "githubLink": "https://github.com/andricolae/coming-soon.git"
+    },
+    {
+        "title": "Pontaj & HR App",
+        "description": "O aplicație pentru gestionarea pontajului și a resurselor umane.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/pontajhr/",
+        "githubLink": "https://github.com/andricolae/pontajhr.git"
+    },
+    {
+        "title": "Flex vs. Grid",
+        "description": "O comparație între Flexbox și Grid în layout-uri.",
+        "technologies": "HTML, CSS",
+        "liveLink": "https://andricolae.github.io/flex-v-grid/",
+        "githubLink": "https://github.com/andricolae/flex-v-grid.git"
+    },
+    {
+        "title": "Calculator de bacșiș",
+        "description": "Calculator pentru bacșiș și random generator pentru prietenul care plătește nota.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/tips/",
+        "githubLink": "https://github.com/andricolae/tips.git"
+    },
+    {
+        "title": "Meniu Hamburger",
+        "description": "Meniu simplu tip Hamburger, responsive.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/hamburger-menu/",
+        "githubLink": "https://github.com/andricolae/hamburger-menu.git"
+    },
+    {
+        "title": "Currency Converter",
+        "description": "Un convertor simplu de valută, care ia datele dintr-un API.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/currency/",
+        "githubLink": "https://github.com/andricolae/currency.git"
+    }
+]
