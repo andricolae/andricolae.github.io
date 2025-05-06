@@ -6,38 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Andrei-Nicolae Căluțiu | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/icon.png" sizes="32x32">
+    <link rel="icon" href="/icon.png" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3b82f6',
-                        secondary: '#10b981',
-                        dark: '#1f2937',
-                        light: '#f9fafb'
-                    },
-                    fontFamily: {
-                        poppins: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .hexagon-clip {
-            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        }
-    </style>
+    <link href="/style.css" rel="stylesheet">
+    <script src="script_before.js" type="text/javascript"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
@@ -183,7 +156,7 @@
         </div>
     </footer>
 
-    <script src="script.js" type="text/javascript"></script>
+    <script src="script_after.js" type="text/javascript"></script>
 
 </body>
 </html>
