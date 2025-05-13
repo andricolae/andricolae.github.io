@@ -1,0 +1,95 @@
+import { Project } from '../../app/models/project.model';
+
+export const PROJECTS: Project[] = [
+    {
+        "title": "Loan Calculator",
+        "description": "This is an Angular app that works as a Loan Calculator. All the simulation a user makes are stored in the Local Storage and the user can edit and delete a simulation. The app uses PWA functionality and the users can install this app on their mobile devices or on PC's as a standalone app.",
+        "technologies": "Angular, Typescript, TailwindCSS, PWA",
+        "liveLink": "https://loan-calculator-blond.vercel.app/",
+        "githubLink": "https://github.com/andricolae/loan-calculator"
+    },
+    {
+        "title": "Course Scheduler",
+        "description": "Works together with the School Manager App, this app receives requests via an API from the school manager app to schedule the sessions for a newly added course. In this app the school admin can schedule all the sessions and check for conflicts and can send back the schedule via the API to the school manager app.",
+        "technologies": "Angular, Typescript, Firebase, TailwindCSS",
+        "liveLink": "https://course-scheduler-cyan.vercel.app/home",
+        "githubLink": "https://github.com/andricolae/course-scheduler.git"
+    },
+    {
+        "title": "School Manager",
+        "description": "An Angular project for teachers, students and school admins to track the activity inside a school. Teachers can grade students and mark them absent or present. Students can enroll and attend classes, also they can see their grades and school admins can manage and see an overview of everything.",
+        "technologies": "Angular, Typescript, Firebase, TailwindCSS",
+        "liveLink": "https://school-mngr.vercel.app/home",
+        "githubLink": "https://github.com/andricolae/school-mngr.git"
+    },
+    {
+        "title": "Expense Tracker",
+        "description": "An Angular team project that helps you track your expenses and add them by scanning a receipt.",
+        "technologies": "Angular, Typescript, Firebase",
+        "liveLink": "https://expense-tracker-ntt.vercel.app/",
+        "githubLink": "https://github.com/andricolae/expense-tracker.git"
+    },
+    {
+        "title": "Angular Template Page",
+        "description": "A template project for an Angular project that uses authentication, routing, guards and translation.",
+        "technologies": "Angular, Typescript, Firebase",
+        "liveLink": "https://angular-template-page.vercel.app/auth",
+        "githubLink": "https://github.com/andricolae/angular-template-page"
+    },
+    {
+        "title": "Sports Tracker",
+        "description": "An Angular project with responsive design to track score in various sports.",
+        "technologies": "Angular, Typescript",
+        "liveLink": "https://github.com/andricolae/sports-tracker",
+        "githubLink": "https://andricolae.github.io/sports-tracker/"
+    },
+    {
+        "title": "Personal Dashboard",
+        "description": "A dashboard type of web app. In this team project I built the currency converter.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/personal-dashboard/",
+        "githubLink": "https://github.com/andricolae/personal-dashboard"
+    },
+    {
+        "title": "Coming Soon Page",
+        "description": "O pagină <Coming Soon> pentru proiecte în dezvoltare.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/coming-soon/",
+        "githubLink": "https://github.com/andricolae/coming-soon.git"
+    },
+    {
+        "title": "Pontaj & HR App",
+        "description": "O aplicație pentru gestionarea pontajului și a resurselor umane.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/pontajhr/",
+        "githubLink": "https://github.com/andricolae/pontajhr.git"
+    },
+    {
+        "title": "Flex vs. Grid",
+        "description": "O comparație între Flexbox și Grid în layout-uri.",
+        "technologies": "HTML, CSS",
+        "liveLink": "https://andricolae.github.io/flex-v-grid/",
+        "githubLink": "https://github.com/andricolae/flex-v-grid.git"
+    },
+    {
+        "title": "Calculator de bacșiș",
+        "description": "Calculator pentru bacșiș și random generator pentru prietenul care plătește nota.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/tips/",
+        "githubLink": "https://github.com/andricolae/tips.git"
+    },
+    {
+        "title": "Meniu Hamburger",
+        "description": "Meniu simplu tip Hamburger, responsive.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/hamburger-menu/",
+        "githubLink": "https://github.com/andricolae/hamburger-menu.git"
+    },
+    {
+        "title": "Currency Converter",
+        "description": "Un convertor simplu de valută, care ia datele dintr-un API.",
+        "technologies": "HTML, CSS, JavaScript",
+        "liveLink": "https://andricolae.github.io/currency/",
+        "githubLink": "https://github.com/andricolae/currency.git"
+    }
+];

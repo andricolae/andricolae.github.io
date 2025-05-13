@@ -1,0 +1,14 @@
+<section id="projects" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">My Projects</h2>
+    <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A collection of web development projects showcasing my skills and experience.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <app-project-card
+        *ngFor="let project of projects; let i = index"
+        [project]="project"
+        [index]="i"
+      ></app-project-card>
+    </div>
+  </div>
+</section>

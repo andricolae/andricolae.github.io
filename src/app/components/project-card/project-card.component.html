@@ -1,0 +1,19 @@
+<div class="project-card {{bgColors[index % bgColors.length]}} border {{borderColors[index % borderColors.length]}} rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
+  <div class="p-8">
+    <h3 class="text-xl font-bold mb-4">{{project.title}}</h3>
+    <p class="text-gray-600 mb-6 min-h-[60px]">{{project.description}}</p>
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span
+        *ngFor="let tech of project.technologies.split(', ')"
+        class="bg-white px-3 py-1 text-xs rounded-full border border-gray-200"
+      >
+        {{tech}}
+      </span>
+    </div>
+  </div>
+  <div class="flex border-t border-gray-200">
+    <a [href]="project.liveLink" target="_blank" class="flex-1 text-center py-4 text-blue-600 font-medium hover:bg-blue-600 hover:text-white transition-colors">Live Demo</a>
+    <div class="w-px bg-gray-200"></div>
+    <a [href]="project.githubLink" target="_blank" class="flex-1 text-center py-4 text-gray-600 font-medium hover:bg-gray-900 hover:text-white transition-colors">GitHub</a>
+  </div>
+</div>
